@@ -51,6 +51,7 @@ val day_weekToNumeric = day_week.zipWithIndex.toMap
 val carrier_codeToNumeric = carrier_code.zipWithIndex.toMap
 val tail_numToNumeric = tail_num.zipWithIndex.toMap
 val orig_idToNumeric = orig_id.zipWithIndex.toMap
+val onceToNumeric = once.zipWithIndex.toMap
 val flnumToNumeric = flnum.zipWithIndex.toMap
 val airport_origToNumeric = airport_orig.zipWithIndex.toMap
 val dest_idToNumeric = dest_id.zipWithIndex.toMap
@@ -83,7 +84,7 @@ val dataSplits = labeledPoints.randomSplit(Array(0.80, 0.20))
 val trainingData = dataSplits(0) 
 val testData = dataSplits(1)
 
-testData.saveAsTextFile(path + "testData.data")
+testData.saveAsTextFile(PATH + "testData.data")
 
 trainingData.collect().foreach(println)
 testData.collect().foreach(println)
