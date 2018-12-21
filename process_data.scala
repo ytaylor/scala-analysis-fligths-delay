@@ -10,7 +10,7 @@ import org.apache.spark.mllib.linalg.Vectors
 import org.apache.spark.mllib.regression.LabeledPoint
 
 /* Lectura del conjunto de datos*/
-val PATH ="/home/floppita/Downloads/"
+val PATH =""
 val FILE= "/vuelos.data"
 val DATA = PATH + FILE
 
